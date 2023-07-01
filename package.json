@@ -1,6 +1,6 @@
 {
-	"name": "raxis",
-	"version": "0.0.1",
+	"name": "raxis-ecs",
+	"version": "1.0.0",
 	"description": "Raxis Game Engine",
 	"type": "module",
 	"files": [
@@ -19,8 +19,11 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build",
-		"publish": "npm run build & npm publish"
+		"docs": "documentation build lib/** -f md -o docs.md",
+		"build": "tsc && vite build & npm run docs",
+		"publish": "npm run build & npm publish",
+		"version": "git add -A lib",
+		"postversion": "git push && git push --tags"
 	},
 	"devDependencies": {
 		"typescript": "^5.1.3",
