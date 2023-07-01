@@ -1,11 +1,11 @@
 {
 	"name": "raxis-ecs",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Raxis Game Engine",
 	"type": "module",
 	"files": [
-		"dist",
-		"types"
+		"dist/**",
+		"types/**"
 	],
 	"main": "./dist/raxis.umd.cjs",
 	"module": "./dist/raxis.js",
@@ -20,9 +20,9 @@
 	"scripts": {
 		"dev": "vite",
 		"docs": "documentation build lib/** -f md -o docs.md",
-		"build": "tsc && vite build & npm run docs",
+		"build": "npm run docs & tsc && vite build",
 		"publish": "npm run build & npm publish",
-		"version": "git add -A lib",
+		"version": "git add -A . && git commit",
 		"postversion": "git push && git push --tags"
 	},
 	"devDependencies": {
