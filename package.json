@@ -1,6 +1,6 @@
 {
 	"name": "raxis-ecs",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Raxis Game Engine",
 	"type": "module",
 	"files": [
