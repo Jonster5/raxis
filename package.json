@@ -1,0 +1,33 @@
+{
+	"name": "raxis",
+	"version": "0.0.1",
+	"description": "Raxis Game Engine",
+	"type": "module",
+	"files": [
+		"dist",
+		"types"
+	],
+	"main": "./dist/raxis.umd.cjs",
+	"module": "./dist/raxis.js",
+	"types": "./types/raxis.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/raxis.js",
+			"require": "./dist/raxis.umd.cjs",
+			"types": "./types/raxis.d.ts"
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"publish": "npm run build & npm publish"
+	},
+	"devDependencies": {
+		"typescript": "^5.1.3",
+		"vite": "^4.3.9"
+	},
+	"repository": "https://github.com/Jonster5/raxis.git",
+	"dependencies": {
+		"number-allocator": "^1.0.14"
+	}
+}
