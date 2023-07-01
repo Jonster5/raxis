@@ -14,7 +14,7 @@
     "noEmit": false,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outFile": "./types/raxis.d.ts",
+    "outDir": "./types",
 
     /* Linting */
     "strict": true,

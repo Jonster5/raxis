@@ -1,0 +1,35 @@
+export declare class Sound {
+    buffer: AudioBuffer;
+    loop: boolean;
+    startTime: number;
+    startOffset: number;
+    actx: AudioContext;
+    soundNode: AudioBufferSourceNode;
+    volumeNode: GainNode;
+    panNode: StereoPannerNode;
+    convolverNode: ConvolverNode;
+    delayNode: DelayNode;
+    feedbackNode: GainNode;
+    filterNode: BiquadFilterNode;
+    playing: boolean;
+    playbackRate: number;
+    randomPitch: boolean;
+    reverb: boolean;
+    reverbImpulse: AudioBuffer | null;
+    echo: boolean;
+    delay: number;
+    feedback: number;
+    filter: number;
+    constructor(buffer: AudioBuffer, loop?: boolean, startTime?: number, startOffset?: number);
+    play(): void;
+    playFrom(t: number): void;
+    pause(): number | undefined;
+    restart(): void;
+    setEcho(on: boolean, delay?: number, feedback?: number, filter?: number): void;
+    setReverb(on: boolean, duration?: number, decay?: number, reverse?: boolean): void;
+    get volume(): number;
+    set volume(v: number);
+    get pan(): number;
+    set pan(v: number);
+    onDestroy(): void;
+}
