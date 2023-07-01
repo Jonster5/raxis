@@ -1,6 +1,6 @@
 {
 	"name": "raxis-ecs",
-	"version": "1.0.6",
+	"version": "1.2.0",
 	"description": "Raxis Game Engine",
 	"type": "module",
 	"files": [
@@ -15,20 +15,10 @@
 			"require": "./dist/raxis-main.cjs.js",
 			"types": "./dist/main.d.ts"
 		},
-		"./engine": {
-			"import": "./dist/raxis-engine.es.js",
-			"require": "./dist/raxis-engine.cjs.js",
-			"types": "./dist/engine.d.ts"
-		},
 		"./math": {
 			"import": "./dist/raxis-math.es.js",
 			"require": "./dist/raxis-math.cjs.js",
 			"types": "./dist/math.d.ts"
-		},
-		"./plugins": {
-			"import": "./dist/raxis-plugins.es.js",
-			"require": "./dist/raxis-plugins.cjs.js",
-			"types": "./dist/plugins.d.ts"
 		}
 	},
 	"scripts": {
@@ -38,13 +28,12 @@
 		"publish": "npm run build & npm publish"
 	},
 	"devDependencies": {
+		"@types/node": "^20.3.3",
 		"execa": "^7.1.1",
+		"number-allocator": "^1.0.14",
 		"typescript": "^5.1.3",
 		"vite": "^4.3.9",
 		"vite-plugin-dts": "^3.0.2"
 	},
-	"repository": "https://github.com/Jonster5/raxis.git",
-	"dependencies": {
-		"number-allocator": "^1.0.14"
-	}
+	"repository": "https://github.com/Jonster5/raxis.git"
 }

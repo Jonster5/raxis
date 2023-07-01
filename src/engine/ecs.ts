@@ -26,11 +26,13 @@ export class ECS {
 
 	private queries: Map<QueryDef, QueryHandler>;
 
-	private updater!: number | null;
+	private updater!: number | NodeJS.Timeout | null;
 	private frameCount: number;
 
 	private context: SystemContext;
 	private defaultContext: SystemContext;
+
+	private server: boolean;
 
 	constructor() {
 		this.components = new Map();
@@ -62,6 +64,8 @@ export class ECS {
 		};
 
 		this.context = this.defaultContext;
+
+		this.server = typeof window === 'undefined';
 	}
 
 	/**
@@ -620,11 +624,12 @@ export class ECS {
 	 * Starts the ECS.
 	 * This runs all the startup systems and subsequently begins the main loop
 	 * @async
+	 * @param frameTime Use to specify time in ms each frame should try to take. If omitted frames will run as fast as possible. Only works in servers.
 	 * @returns `Promise<this>`
 	 */
-	async run() {
+	async run(frameTime?: number) {
 		await this.startup();
-		await this.loop();
+		await this.loop(frameTime ?? 0);
 
 		return this;
 	}
@@ -648,10 +653,14 @@ export class ECS {
 		return this;
 	}
 
-	private async loop() {
+	private async loop(frameTime: number) {
 		await this.update.call(this);
 
-		this.updater = requestAnimationFrame(this.loop.bind(this));
+		if (this.server) {
+			this.updater = setInterval(this.update.bind(this), frameTime);
+		} else {
+			this.updater = requestAnimationFrame(this.loop.bind(this));
+		}
 	}
 
 	/**
@@ -720,7 +729,11 @@ export class ECS {
 			throw new Error(`ECS is not running`);
 		}
 
-		cancelAnimationFrame(this.updater);
+		if (this.server) {
+			clearInterval(this.updater as NodeJS.Timeout);
+		} else {
+			cancelAnimationFrame(this.updater as number);
+		}
 
 		this.updater = null;
 
