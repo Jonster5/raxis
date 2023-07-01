@@ -1,4 +1,5 @@
 export * from './plugins/audio';
+export * from './plugins/graphics';
 export * from './plugins/input';
 export * from './plugins/tween';
 export * from './plugins/assets';
