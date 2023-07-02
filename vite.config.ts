@@ -7,7 +7,7 @@ export default defineConfig({
 		lib: {
 			entry: ['./src/main.ts', './src/math.ts'],
 			name: 'raxis',
-			fileName: (f, n) => `raxis-${n}.${f}.js`,
+			fileName: (f, n) => `raxis-${n}.${f === 'cjs' ? f : 'js'}`,
 			formats: ['es', 'cjs'],
 		},
 	},
