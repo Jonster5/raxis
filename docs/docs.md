@@ -276,8 +276,9 @@ Type: function (...args: [Array][268]\<any>): T
 
 ### Examples
 
-```javascript
+````javascript
 In order to use a component `T` in the ECS, you must first register it's `CompType<T>` in the ECS component registry.
+```ts
 class MyComp extends Component { ... }
 
 // anywhere with a reference to the ECS you want to use
@@ -287,6 +288,7 @@ ecs.addComponentType(MyComp);
 
 In that example, the value `MyComp` being passed into method is of type `CompType<MyComp>`
 ```
+````
 
 ## Component
 

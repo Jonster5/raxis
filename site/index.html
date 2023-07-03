@@ -1266,6 +1266,7 @@
     
       
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-title class_">In</span> order to use a component <span class="hljs-string">`T`</span> <span class="hljs-keyword">in</span> the <span class="hljs-variable constant_">ECS</span>, you must first register it<span class="hljs-string">&#x27;s `CompType&lt;T&gt;` in the ECS component registry.
+```ts
 class MyComp extends Component { ... }
 
 // anywhere with a reference to the ECS you want to use
@@ -1273,7 +1274,8 @@ class MyComp extends Component { ... }
 ecs.addComponentType(MyComp);
 
 
-In that example, the value `MyComp` being passed into method is of type `CompType&lt;MyComp&gt;`</span></pre>
+In that example, the value `MyComp` being passed into method is of type `CompType&lt;MyComp&gt;`
+```</span></pre>
     
   
 
