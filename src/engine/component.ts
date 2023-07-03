@@ -4,6 +4,7 @@ import type { ECS } from './ecs';
  * @type Describes the constructor of a given component type.
  *
  * @example In order to use a component `T` in the ECS, you must first register it's `CompType<T>` in the ECS component registry.
+ * ```ts
  * class MyComp extends Component { ... }
  *
  * // anywhere with a reference to the ECS you want to use
@@ -12,6 +13,7 @@ import type { ECS } from './ecs';
  *
  *
  * In that example, the value `MyComp` being passed into method is of type `CompType<MyComp>`
+ * ```
  */
 export type CompType<T extends Component = Component> = new (...args: any[]) => T;
 
