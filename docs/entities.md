@@ -12,7 +12,7 @@ function someSystem(ecs: ECS) {
 }
 ```
 
-[Entity](../docs.md#entity) is a utility class which provides an api for accessing and managing your entity.
+[Entity](./docs.md#entity) is a utility class which provides an api for accessing and managing your entity.
 
 ---
 
@@ -29,4 +29,4 @@ myEntity.destroy();
 
 When you destroy an entity, all of it's component's will be destroyed, and any child entities will be destroyed as well.
 
-See the docs for [Entity](../docs.md#entity) for a full list of methods. 
+See the docs for [Entity](./docs.md#entity) for a full list of methods. 

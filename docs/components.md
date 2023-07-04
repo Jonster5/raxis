@@ -1,6 +1,6 @@
 # Using Components
 
-Components, along with [Resources](./resources.md), hold all of your application's state. They should not contain any functionality except for a few [predefined methods](../docs.md#component) that can be implemented.
+Components, along with [Resources](./resources.md), hold all of your application's state. They should not contain any functionality except for a few [predefined methods](./docs.md#component) that can be implemented.
 
 ## Making Components
 

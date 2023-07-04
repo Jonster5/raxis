@@ -646,13 +646,17 @@ export class Vec2 {
 	 * Freezes this vector so it's values can no longer be change in any way
 	 */
 	freeze(): Vec2 {
-		Object.freeze(this);
-
-		return this;
+		return Object.freeze(this);
 	}
 
 	*[Symbol.iterator]() {
 		yield this.x;
 		yield this.y;
+	}
+
+	[Symbol.toPrimitive](hint: string): string | number {
+		if (hint === 'string') return this.toString();
+		else if (hint === 'number') return this.mag();
+		else return 'Vec2';
 	}
 }
