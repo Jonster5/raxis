@@ -57,222 +57,228 @@
         *   [Parameters][53]
     *   [destroy][54]
         *   [Parameters][55]
-    *   [hasResource][56]
+    *   [roots][56]
         *   [Parameters][57]
-    *   [insertResource][58]
+    *   [addRoot][58]
         *   [Parameters][59]
-    *   [hasLocalResource][60]
+    *   [removeRoot][60]
         *   [Parameters][61]
-    *   [insertLocalResource][62]
+    *   [hasResource][62]
         *   [Parameters][63]
-    *   [getResource][64]
+    *   [insertResource][64]
         *   [Parameters][65]
-    *   [getLocalResource][66]
+    *   [hasLocalResource][66]
         *   [Parameters][67]
-    *   [removeResource][68]
+    *   [insertLocalResource][68]
         *   [Parameters][69]
-    *   [removeLocalResource][70]
+    *   [getResource][70]
         *   [Parameters][71]
-    *   [getEventWriter][72]
+    *   [getLocalResource][72]
         *   [Parameters][73]
-    *   [getEventReader][74]
+    *   [removeResource][74]
         *   [Parameters][75]
-    *   [query][76]
+    *   [removeLocalResource][76]
         *   [Parameters][77]
-    *   [run][78]
+    *   [getEventWriter][78]
         *   [Parameters][79]
-    *   [startup][80]
-    *   [entityCount][81]
-    *   [update][82]
-    *   [shutdown][83]
-    *   [stop][84]
-    *   [wipe][85]
-*   [Entity][86]
-    *   [Parameters][87]
-    *   [has][88]
-        *   [Parameters][89]
-    *   [insert][90]
-        *   [Parameters][91]
-        *   [Examples][92]
-    *   [get][93]
-        *   [Parameters][94]
-        *   [Examples][95]
-    *   [ecs][96]
-    *   [delete][97]
-        *   [Parameters][98]
-        *   [Examples][99]
-    *   [destroy][100]
-    *   [id][101]
-    *   [parent][102]
-        *   [Parameters][103]
-    *   [children][104]
-        *   [Parameters][105]
-    *   [addChild][106]
-        *   [Parameters][107]
-    *   [addChildren][108]
+    *   [getEventReader][80]
+        *   [Parameters][81]
+    *   [query][82]
+        *   [Parameters][83]
+    *   [run][84]
+        *   [Parameters][85]
+    *   [startup][86]
+    *   [entityCount][87]
+    *   [update][88]
+    *   [shutdown][89]
+    *   [stop][90]
+    *   [wipe][91]
+*   [Entity][92]
+    *   [Parameters][93]
+    *   [has][94]
+        *   [Parameters][95]
+    *   [insert][96]
+        *   [Parameters][97]
+        *   [Examples][98]
+    *   [get][99]
+        *   [Parameters][100]
+        *   [Examples][101]
+    *   [ecs][102]
+    *   [delete][103]
+        *   [Parameters][104]
+        *   [Examples][105]
+    *   [destroy][106]
+    *   [id][107]
+    *   [parent][108]
         *   [Parameters][109]
-    *   [removeChild][110]
+    *   [children][110]
         *   [Parameters][111]
-*   [ECSEvent][112]
-    *   [getName][113]
-    *   [getType][114]
-*   [EventType][115]
-    *   [Examples][116]
-*   [EventHandler][117]
-    *   [Parameters][118]
-*   [EventWriter][119]
-    *   [Parameters][120]
-    *   [send][121]
-        *   [Parameters][122]
-*   [EventReader][123]
+    *   [addChild][112]
+        *   [Parameters][113]
+    *   [addChildren][114]
+        *   [Parameters][115]
+    *   [removeChild][116]
+        *   [Parameters][117]
+*   [ECSEvent][118]
+    *   [getName][119]
+    *   [getType][120]
+*   [EventType][121]
+    *   [Examples][122]
+*   [EventHandler][123]
     *   [Parameters][124]
-    *   [available][125]
-    *   [empty][126]
-    *   [get][127]
-    *   [clear][128]
-*   [ECSPlugin][129]
-*   [CompTypeMod][130]
-*   [ModType][131]
-*   [With][132]
-    *   [Parameters][133]
-*   [Without][134]
-    *   [Parameters][135]
-*   [ExtractCompList][136]
-*   [QueryDef][137]
-    *   [Properties][138]
-*   [QueryHandler][139]
-    *   [Parameters][140]
-*   [QueryResults][141]
-    *   [Parameters][142]
-    *   [size][143]
-    *   [empty][144]
-    *   [results][145]
-        *   [Parameters][146]
-    *   [single][147]
-    *   [entities][148]
-    *   [entity][149]
-*   [ResType][150]
-*   [Resource][151]
-    *   [getName][152]
-    *   [getType][153]
-*   [System][154]
-*   [AsyncSystem][155]
-*   [SystemContext][156]
-    *   [Properties][157]
-*   [easings][158]
-*   [Vec2][159]
-    *   [Parameters][160]
-    *   [x][161]
-    *   [y][162]
-    *   [add][163]
-        *   [Parameters][164]
-    *   [sub][165]
-        *   [Parameters][166]
-    *   [mul][167]
-        *   [Parameters][168]
-    *   [div][169]
+*   [EventWriter][125]
+    *   [Parameters][126]
+    *   [send][127]
+        *   [Parameters][128]
+*   [EventReader][129]
+    *   [Parameters][130]
+    *   [available][131]
+    *   [empty][132]
+    *   [get][133]
+    *   [clear][134]
+*   [ECSPlugin][135]
+*   [CompTypeMod][136]
+*   [ModType][137]
+*   [With][138]
+    *   [Parameters][139]
+*   [Without][140]
+    *   [Parameters][141]
+*   [ExtractCompList][142]
+*   [QueryDef][143]
+    *   [Properties][144]
+*   [QueryHandler][145]
+    *   [Parameters][146]
+*   [QueryResults][147]
+    *   [Parameters][148]
+    *   [size][149]
+    *   [empty][150]
+    *   [results][151]
+        *   [Parameters][152]
+    *   [single][153]
+    *   [entities][154]
+    *   [entity][155]
+*   [ResType][156]
+*   [Resource][157]
+    *   [getName][158]
+    *   [getType][159]
+*   [System][160]
+*   [AsyncSystem][161]
+*   [SystemContext][162]
+    *   [Properties][163]
+*   [easings][164]
+*   [Vec2][165]
+    *   [Parameters][166]
+    *   [x][167]
+    *   [y][168]
+    *   [add][169]
         *   [Parameters][170]
-    *   [dot][171]
+    *   [sub][171]
         *   [Parameters][172]
-    *   [width][173]
-    *   [height][174]
-    *   [perpRight][175]
-    *   [perpLeft][176]
-    *   [unit][177]
-    *   [angle][178]
-    *   [angleTo][179]
-        *   [Parameters][180]
-    *   [setAngle][181]
-        *   [Parameters][182]
-    *   [mag][183]
-    *   [magSq][184]
-    *   [setMag][185]
+    *   [mul][173]
+        *   [Parameters][174]
+    *   [div][175]
+        *   [Parameters][176]
+    *   [dot][177]
+        *   [Parameters][178]
+    *   [width][179]
+    *   [height][180]
+    *   [perpRight][181]
+    *   [perpLeft][182]
+    *   [unit][183]
+    *   [angle][184]
+    *   [angleTo][185]
         *   [Parameters][186]
-    *   [set][187]
+    *   [setAngle][187]
         *   [Parameters][188]
-    *   [setFromAngle][189]
-        *   [Parameters][190]
-    *   [setFromPolar][191]
+    *   [mag][189]
+    *   [magSq][190]
+    *   [setMag][191]
         *   [Parameters][192]
-    *   [random][193]
-    *   [clone][194]
-    *   [toArray][195]
-    *   [toObject][196]
-    *   [toString][197]
-    *   [clamp][198]
-        *   [Parameters][199]
-    *   [clampMag][200]
-        *   [Parameters][201]
-    *   [lerp][202]
-        *   [Parameters][203]
-    *   [equals][204]
+    *   [set][193]
+        *   [Parameters][194]
+    *   [setFromAngle][195]
+        *   [Parameters][196]
+    *   [setFromPolar][197]
+        *   [Parameters][198]
+    *   [random][199]
+    *   [clone][200]
+    *   [toArray][201]
+    *   [toObject][202]
+    *   [toString][203]
+    *   [clamp][204]
         *   [Parameters][205]
-    *   [closeTo][206]
+    *   [clampMag][206]
         *   [Parameters][207]
-    *   [distanceTo][208]
+    *   [lerp][208]
         *   [Parameters][209]
-    *   [distanceToSq][210]
+    *   [equals][210]
         *   [Parameters][211]
-    *   [manhattan][212]
-    *   [manhattanDistanceTo][213]
-        *   [Parameters][214]
-    *   [round][215]
-    *   [floor][216]
-    *   [ceil][217]
-    *   [roundToZero][218]
-    *   [min][219]
+    *   [closeTo][212]
+        *   [Parameters][213]
+    *   [distanceTo][214]
+        *   [Parameters][215]
+    *   [distanceToSq][216]
+        *   [Parameters][217]
+    *   [manhattan][218]
+    *   [manhattanDistanceTo][219]
         *   [Parameters][220]
-    *   [max][221]
-        *   [Parameters][222]
-    *   [map][223]
-        *   [Parameters][224]
-    *   [serialize][225]
-    *   [freeze][226]
-    *   [from][227]
+    *   [round][221]
+    *   [floor][222]
+    *   [ceil][223]
+    *   [roundToZero][224]
+    *   [min][225]
+        *   [Parameters][226]
+    *   [max][227]
         *   [Parameters][228]
-    *   [fromAngle][229]
+    *   [map][229]
         *   [Parameters][230]
-    *   [fromPolar][231]
-        *   [Parameters][232]
-    *   [random][233]
-    *   [add][234]
-        *   [Parameters][235]
-    *   [sub][236]
-        *   [Parameters][237]
-    *   [mul][238]
-        *   [Parameters][239]
-    *   [div][240]
+    *   [serialize][231]
+    *   [freeze][232]
+    *   [from][233]
+        *   [Parameters][234]
+    *   [fromAngle][235]
+        *   [Parameters][236]
+    *   [fromPolar][237]
+        *   [Parameters][238]
+    *   [random][239]
+    *   [add][240]
         *   [Parameters][241]
-    *   [unit][242]
+    *   [sub][242]
         *   [Parameters][243]
-    *   [fromString][244]
+    *   [mul][244]
         *   [Parameters][245]
-    *   [clamp][246]
+    *   [div][246]
         *   [Parameters][247]
-    *   [clampMag][248]
+    *   [unit][248]
         *   [Parameters][249]
-    *   [lerp][250]
+    *   [fromString][250]
         *   [Parameters][251]
-    *   [round][252]
+    *   [clamp][252]
         *   [Parameters][253]
-    *   [floor][254]
+    *   [clampMag][254]
         *   [Parameters][255]
-    *   [ceil][256]
+    *   [lerp][256]
         *   [Parameters][257]
-    *   [roundToZero][258]
+    *   [round][258]
         *   [Parameters][259]
-    *   [min][260]
+    *   [floor][260]
         *   [Parameters][261]
-    *   [max][262]
+    *   [ceil][262]
         *   [Parameters][263]
-    *   [map][264]
+    *   [roundToZero][264]
         *   [Parameters][265]
-    *   [deserialize][266]
+    *   [min][266]
         *   [Parameters][267]
+    *   [max][268]
+        *   [Parameters][269]
+    *   [map][270]
+        *   [Parameters][271]
+    *   [deserialize][272]
+        *   [Parameters][273]
 
 ## CompType
 
-Type: function (...args: [Array][268]\<any>): T
+Type: function (...args: [Array][274]\<any>): T
 
 ### Examples
 
@@ -307,7 +313,7 @@ const foo = new MyComp();
 foo.getName()
 ```
 
-Returns **[string][269]** The name of this component's type
+Returns **[string][275]** The name of this component's type
 
 ### getType
 
@@ -329,7 +335,7 @@ Returns **[CompType][1]\<this>** this component's type
 #### Parameters
 
 *   `ecs` **[ECS][15]** A reference to the ECS.
-*   `eid` **[number][270]** This component's entity ID number.
+*   `eid` **[number][276]** This component's entity ID number.
 
 Returns **void**&#x20;
 
@@ -351,13 +357,13 @@ Returns **[Component][3]** A deep copy of this component. Can be overridden if t
 
 ### serialize
 
-Returns **[string][269]**&#x20;
+Returns **[string][275]**&#x20;
 
 ### deserialize
 
 #### Parameters
 
-*   `str` **[string][269]** A serialized component, usually created by a component's `serialize` method.
+*   `str` **[string][275]** A serialized component, usually created by a component's `serialize` method.
 
 Returns **[Component][3]**&#x20;
 
@@ -382,7 +388,7 @@ Adds all specified component types to the component registry.
 
 #### Parameters
 
-*   `types` **...[Array][268]<[CompType][1]>** Array of any component types
+*   `types` **...[Array][274]<[CompType][1]>** Array of any component types
 
 Returns **any** `this`
 
@@ -393,7 +399,7 @@ All events must be registered before they can be used.
 
 #### Parameters
 
-*   `type` **[EventType][115]** Any event type
+*   `type` **[EventType][121]** Any event type
 
 Returns **any** `this`
 
@@ -403,7 +409,7 @@ Adds all specified event types to the event registry.
 
 #### Parameters
 
-*   `types` **...[Array][268]<[EventType][115]>** Array of any event types
+*   `types` **...[Array][274]<[EventType][121]>** Array of any event types
 
 Returns **any** `this`
 
@@ -414,7 +420,7 @@ All `main` systems run once per frame
 
 #### Parameters
 
-*   `system` **([System][154] | [AsyncSystem][155])** A synchronous or asynchronous ECS system
+*   `system` **([System][160] | [AsyncSystem][161])** A synchronous or asynchronous ECS system
 
 Returns **any** `this`
 
@@ -425,7 +431,7 @@ All `startup` systems run once when the ECS first starts up
 
 #### Parameters
 
-*   `system` **([System][154] | [AsyncSystem][155])** A synchronous or asynchronous ECS system
+*   `system` **([System][160] | [AsyncSystem][161])** A synchronous or asynchronous ECS system
 
 Returns **any** `this`
 
@@ -436,7 +442,7 @@ All `shutdown` systems run once when the ECS shuts down
 
 #### Parameters
 
-*   `system` **([System][154] | [AsyncSystem][155])** A synchronous or asynchronous ECS system
+*   `system` **([System][160] | [AsyncSystem][161])** A synchronous or asynchronous ECS system
 
 Returns **any** `this`
 
@@ -446,7 +452,7 @@ Adds all specified `main` systems
 
 #### Parameters
 
-*   `systems` **...[Array][268]<([System][154] | [AsyncSystem][155])>** Array of synchronous or asynchronous ECS systems
+*   `systems` **...[Array][274]<([System][160] | [AsyncSystem][161])>** Array of synchronous or asynchronous ECS systems
 
 Returns **any** `this`
 
@@ -456,7 +462,7 @@ Adds all specified `startup` systems
 
 #### Parameters
 
-*   `systems` **...[Array][268]<([System][154] | [AsyncSystem][155])>** Array of synchronous or asynchronous ECS systems
+*   `systems` **...[Array][274]<([System][160] | [AsyncSystem][161])>** Array of synchronous or asynchronous ECS systems
 
 Returns **any** `this`
 
@@ -466,7 +472,7 @@ Adds all specified `shutdown` systems
 
 #### Parameters
 
-*   `systems` **...[Array][268]<[System][154]>** Array of synchronous or asynchronous ECS systems
+*   `systems` **...[Array][274]<[System][160]>** Array of synchronous or asynchronous ECS systems
 
 Returns **any** `this`
 
@@ -478,7 +484,7 @@ Systems that have been disabled will not run.
 
 #### Parameters
 
-*   `system` **([System][154] | [AsyncSystem][155] | [string][269])** synchronous or asynchronous system, or system name
+*   `system` **([System][160] | [AsyncSystem][161] | [string][275])** synchronous or asynchronous system, or system name
 
 Returns **this** `this`
 
@@ -490,7 +496,7 @@ Systems that have been disabled will not run.
 
 #### Parameters
 
-*   `system` **([System][154] | [AsyncSystem][155] | [string][269])** synchronous or asynchronous system, or system name
+*   `system` **([System][160] | [AsyncSystem][161] | [string][275])** synchronous or asynchronous system, or system name
 
 Returns **any** `this`
 
@@ -502,7 +508,7 @@ Systems that have been disabled will not run.
 
 #### Parameters
 
-*   `system` **([System][154] | [string][269])** synchronous or asynchronous system, or system name
+*   `system` **([System][160] | [string][275])** synchronous or asynchronous system, or system name
 
 Returns **any** `this`
 
@@ -512,7 +518,7 @@ Inserts the specified plugin into the ECS
 
 #### Parameters
 
-*   `plugin` **[ECSPlugin][129]**&#x20;
+*   `plugin` **[ECSPlugin][135]**&#x20;
 
 Returns **any** `this`
 
@@ -522,7 +528,7 @@ Inserts all specified plugins to the ECS
 
 #### Parameters
 
-*   `plugins` **...[Array][268]<[ECSPlugin][129]>**&#x20;
+*   `plugins` **...[Array][274]<[ECSPlugin][135]>**&#x20;
 
 Returns **any** `this`
 
@@ -544,7 +550,7 @@ Used to create a new entity with a unique ID number and with all specified compo
 
 #### Parameters
 
-*   `comps` **...[Array][268]<[Component][3]>** Array of component instances to be inserted to the new entity. If omitted then the entity will be empty.
+*   `comps` **...[Array][274]<[Component][3]>** Array of component instances to be inserted to the new entity. If omitted then the entity will be empty.
 
 #### Examples
 
@@ -564,7 +570,7 @@ Used to create `Entity` instances from raw entity IDs.
 
 #### Parameters
 
-*   `eid` **[number][270]** Entity ID number
+*   `eid` **[number][276]** Entity ID number
 
 Returns **any** `Entity` instance associated with the specified ID
 
@@ -574,18 +580,38 @@ Destroys the specified entity and it's components, as well all of it's children 
 
 #### Parameters
 
-*   `eid` **[number][270]** ID number of the entity.
-*   `force` **[boolean][271]?** If true, then all data associated with the specified ID will be destroyed whether or not there is technically an entity associated with that ID. If false or omitted and the specified entity does not exist, then a warning will be emitted and the method will abort
+*   `eid` **[number][276]** ID number of the entity.
+*   `force` **[boolean][277]?** If true, then all data associated with the specified ID will be destroyed whether or not there is technically an entity associated with that ID. If false or omitted and the specified entity does not exist, then a warning will be emitted and the method will abort
 
 Returns **any** `this`
+
+### roots
+
+#### Parameters
+
+*   `mods` **...[Array][274]<[CompTypeMod][136]>**&#x20;
+
+Returns **[Array][274]<[number][276]>** An array containing the entity IDs of all root entities that meet the component type modifiers specified. If no modifiers are specified then it will return all root entity eids.
+
+### addRoot
+
+#### Parameters
+
+*   `eid` **[number][276]**&#x20;
+
+### removeRoot
+
+#### Parameters
+
+*   `eid` **[number][276]**&#x20;
 
 ### hasResource
 
 #### Parameters
 
-*   `res` **[ResType][150]**&#x20;
+*   `res` **[ResType][156]**&#x20;
 
-Returns **[boolean][271]** Boolean indicating whether the specified resource type exists in the ECS
+Returns **[boolean][277]** Boolean indicating whether the specified resource type exists in the ECS
 
 ### insertResource
 
@@ -593,8 +619,8 @@ Dynamically inserts the specified resource into the ECS. There can only be one i
 
 #### Parameters
 
-*   `res` **[Resource][151]** Any resource instance
-*   `replace` **[boolean][271]?** If true then if the is already an instance of the specified resource then it will be replaced with the new one. If false or omitted then an error will be thrown if there is already an instance of the specified resource in the ECS.
+*   `res` **[Resource][157]** Any resource instance
+*   `replace` **[boolean][277]?** If true then if the is already an instance of the specified resource then it will be replaced with the new one. If false or omitted then an error will be thrown if there is already an instance of the specified resource in the ECS.
 
 Returns **any** `this`
 
@@ -602,9 +628,9 @@ Returns **any** `this`
 
 #### Parameters
 
-*   `res` **[ResType][150]**&#x20;
+*   `res` **[ResType][156]**&#x20;
 
-Returns **[boolean][271]** Boolean indicating whether or not the specified resource type exists in the current system context
+Returns **[boolean][277]** Boolean indicating whether or not the specified resource type exists in the current system context
 
 ### insertLocalResource
 
@@ -612,8 +638,8 @@ Dynamically inserts the specified resource in the current `system context`. Ther
 
 #### Parameters
 
-*   `res` **[Resource][151]** Any resource instance
-*   `replace` **[boolean][271]?** If true then if the is already an instance of the specified resource then it will be replaced with the new one. If false or omitted then an error will be thrown if there is already an instance of the specified resource in the system context.
+*   `res` **[Resource][157]** Any resource instance
+*   `replace` **[boolean][277]?** If true then if the is already an instance of the specified resource then it will be replaced with the new one. If false or omitted then an error will be thrown if there is already an instance of the specified resource in the system context.
 
 Returns **any** `this`
 
@@ -623,7 +649,7 @@ Retrieves the resource instance of a specified resource type on the ECS. If the 
 
 #### Parameters
 
-*   `type` **[ResType][150]\<T>** Resource type
+*   `type` **[ResType][156]\<T>** Resource type
 *   `T`  Resource instance
 
 Returns **(T | null)** The resource instance or null if the resource doesn't exist
@@ -634,7 +660,7 @@ Retrieves a locally scoped resource of a specified type on the current system co
 
 #### Parameters
 
-*   `type` **[ResType][150]\<T>** Resource type
+*   `type` **[ResType][156]\<T>** Resource type
 *   `T`  Resource instance
 
 Returns **(T | null)** The resource instance or null if the resource doesn't exist.
@@ -645,7 +671,7 @@ Removes the specified resource from the ECS. If the specified resource does not 
 
 #### Parameters
 
-*   `type` **[ResType][150]** Resource type to be removed
+*   `type` **[ResType][156]** Resource type to be removed
 
 Returns **any** Boolean indicating whether or not the removal was successful
 
@@ -655,7 +681,7 @@ Removes the specified local resource from the current system context
 
 #### Parameters
 
-*   `type` **[ResType][150]** Resource type to be removed
+*   `type` **[ResType][156]** Resource type to be removed
 
 Returns **any** Boolean indicating whether or not the removal was successful
 
@@ -665,9 +691,9 @@ Retrieves the current system's own locally scoped event writer associated with t
 
 #### Parameters
 
-*   `type` **[EventType][115]\<T>** Event type
+*   `type` **[EventType][121]\<T>** Event type
 
-Returns **[EventWriter][119]\<T>** `EventWriter` associated with the specified event type
+Returns **[EventWriter][125]\<T>** `EventWriter` associated with the specified event type
 
 ### getEventReader
 
@@ -675,9 +701,9 @@ Retrieves the current system's own locally scoped event reader associated with t
 
 #### Parameters
 
-*   `type` **[EventType][115]\<T>** Event type
+*   `type` **[EventType][121]\<T>** Event type
 
-Returns **[EventReader][123]\<T>** `EventReader` associated with the specified event type
+Returns **[EventReader][129]\<T>** `EventReader` associated with the specified event type
 
 ### query
 
@@ -689,7 +715,7 @@ The searches are not performance intensive and extremely optimized for use in th
 *   `types` **\[...T]** Tuple array of all the component types being queried
 *   `mods` **...\[...M]** Array of component type modifiers to filter the results
 
-Returns **[QueryResults][141]\<T, M>** Locally scoped `QueryResults` instance associated with the specified component types and component type mods
+Returns **[QueryResults][147]\<T, M>** Locally scoped `QueryResults` instance associated with the specified component types and component type mods
 
 ### run
 
@@ -698,7 +724,7 @@ This runs all the startup systems and subsequently begins the main loop
 
 #### Parameters
 
-*   `frameTime` **[number][270]?** Use to specify time in ms each frame should try to take. If omitted frames will run as fast as possible. Only works in servers.
+*   `frameTime` **[number][276]?** Use to specify time in ms each frame should try to take. If omitted frames will run as fast as possible. Only works in servers.
 
 Returns **any** `Promise<this>`
 
@@ -746,10 +772,10 @@ You should NOT directly instantiate `Entity`, In order to gain access to an Enti
 ### Parameters
 
 *   `ecs` **[ECS][15]**&#x20;
-*   `compRef` **[Map][272]<[CompType][1], [Array][268]<[Component][3]>>**&#x20;
-*   `queries` **[Map][272]<[QueryDef][137], [QueryHandler][139]>**&#x20;
-*   `nodeRef` **[Map][272]<[number][270], TreeNode>**&#x20;
-*   `eid` **[number][270]**&#x20;
+*   `compRef` **[Map][278]<[CompType][1], [Array][274]<[Component][3]>>**&#x20;
+*   `queries` **[Map][278]<[QueryDef][143], [QueryHandler][145]>**&#x20;
+*   `nodeRef` **[Map][278]<[number][276], TreeNode>**&#x20;
+*   `eid` **[number][276]**&#x20;
 
 ### has
 
@@ -757,7 +783,7 @@ You should NOT directly instantiate `Entity`, In order to gain access to an Enti
 
 *   `type` **[CompType][1]**&#x20;
 
-Returns **[boolean][271]** boolean indicating whether there is a component of the specified type associated with this entity
+Returns **[boolean][277]** boolean indicating whether there is a component of the specified type associated with this entity
 
 ### insert
 
@@ -765,7 +791,7 @@ Inserts component instances into this entity
 
 #### Parameters
 
-*   `comps` **...[Array][268]<[Component][3]>**&#x20;
+*   `comps` **...[Array][274]<[Component][3]>**&#x20;
 
 #### Examples
 
@@ -804,7 +830,7 @@ Deletes components of specified types from this entity
 
 #### Parameters
 
-*   `types` **...[Array][268]<[CompType][1]>**&#x20;
+*   `types` **...[Array][274]<[CompType][1]>**&#x20;
 
 #### Examples
 
@@ -830,24 +856,24 @@ Returns **void**&#x20;
 
 ### id
 
-Returns **[number][270]** This entity's ID number
+Returns **[number][276]** This entity's ID number
 
 ### parent
 
 #### Parameters
 
-*   `newParent` **([number][270] | null)?**&#x20;
+*   `newParent` **([number][276] | null)?**&#x20;
 *   `newParant`  If specified, then this entity's parent will be changed to the new ID or removed if `null`
 
-Returns **([number][270] | null)** This ID number of the entity's parent or `null` if it doesn't exist
+Returns **([number][276] | null)** This ID number of the entity's parent or `null` if it doesn't exist
 
 ### children
 
 #### Parameters
 
-*   `mods` **...[Array][268]<[CompTypeMod][130]>**&#x20;
+*   `mods` **...[Array][274]<[CompTypeMod][136]>**&#x20;
 
-Returns **[Array][268]<[number][270]>** An array containing the entity IDs of all of this entity's children that meet the component type modifiers specified. If no modifiers are specified then it will return all of this entity's children.
+Returns **[Array][274]<[number][276]>** An array containing the entity IDs of all of this entity's children that meet the component type modifiers specified. If no modifiers are specified then it will return all of this entity's children.
 
 ### addChild
 
@@ -856,7 +882,7 @@ If the specified entity is already a child of this entity then the method will q
 
 #### Parameters
 
-*   `child` **([Entity][52] | [number][270])** Entity instance or entity ID number
+*   `child` **([Entity][52] | [number][276])** Entity instance or entity ID number
 
 Returns **this** A reference to this entity to allow for method chaining
 
@@ -866,7 +892,7 @@ Calls `addChild` on all input entities
 
 #### Parameters
 
-*   `children` **...[Array][268]<([Entity][52] | [number][270])>**&#x20;
+*   `children` **...[Array][274]<([Entity][52] | [number][276])>**&#x20;
 
 Returns **this** A reference to this entity to allow for method chaining
 
@@ -877,7 +903,7 @@ If the specified entity is not a child of this entity then the method will quiet
 
 #### Parameters
 
-*   `child` **([Entity][52] | [number][270])** Entity instance or entity ID number
+*   `child` **([Entity][52] | [number][276])** Entity instance or entity ID number
 
 Returns **this** A reference to this entity to allow for method chaining
 
@@ -887,15 +913,15 @@ Class which all custom ECS event types must inherit from
 
 ### getName
 
-Returns **[string][269]** The name of this event's type
+Returns **[string][275]** The name of this event's type
 
 ### getType
 
-Returns **[EventType][115]\<this>** this event instance's constructor
+Returns **[EventType][121]\<this>** this event instance's constructor
 
 ## EventType
 
-Type: function (...args: [Array][268]\<any>): T
+Type: function (...args: [Array][274]\<any>): T
 
 ### Examples
 
@@ -920,7 +946,7 @@ Class which handles event data collection and propogation for a specific custom 
 ### Parameters
 
 *   `ecs` **[ECS][15]**&#x20;
-*   `type` **[EventType][115]\<T>**&#x20;
+*   `type` **[EventType][121]\<T>**&#x20;
 
 ## EventWriter
 
@@ -928,7 +954,7 @@ Class which provides functionality for sending ECS events
 
 ### Parameters
 
-*   `handler` **[EventHandler][117]\<T>**&#x20;
+*   `handler` **[EventHandler][123]\<T>**&#x20;
 
 ### send
 
@@ -946,21 +972,21 @@ Class which provides functionality for reading ECS events
 
 ### Parameters
 
-*   `handler` **[EventHandler][117]\<T>**&#x20;
+*   `handler` **[EventHandler][123]\<T>**&#x20;
 
 ### available
 
-Returns **[boolean][271]** boolean indicating whether there is at least one new unread event of type `T`
+Returns **[boolean][277]** boolean indicating whether there is at least one new unread event of type `T`
 
 ### empty
 
-Returns **[boolean][271]** boolean indicating if there are no unread events of type `T`
+Returns **[boolean][277]** boolean indicating if there are no unread events of type `T`
 
 ### get
 
 When called this method will mark all events as read making any unhandled events will be innaccessable.
 
-Returns **([Array][268]<(T | null)> | null)** An array containing all unread events or null if there are none available.
+Returns **([Array][274]<(T | null)> | null)** An array containing all unread events or null if there are none available.
 
 ### clear
 
@@ -986,7 +1012,7 @@ Type: (`"With"` | `"Without"`)
 
 *   `c` **[CompType][1]\<T>**&#x20;
 
-Returns **[CompTypeMod][130]<`"With"`, T>** An inclusionary component type modifier of component type `T`
+Returns **[CompTypeMod][136]<`"With"`, T>** An inclusionary component type modifier of component type `T`
 
 ## Without
 
@@ -994,7 +1020,7 @@ Returns **[CompTypeMod][130]<`"With"`, T>** An inclusionary component type modif
 
 *   `c` **[CompType][1]\<T>**&#x20;
 
-Returns **[CompTypeMod][130]<`"Without"`, T>** An exclusionary component type modifier of component type `T`
+Returns **[CompTypeMod][136]<`"Without"`, T>** An exclusionary component type modifier of component type `T`
 
 ## ExtractCompList
 
@@ -1015,8 +1041,8 @@ Class which handles entity validation for it's unique query definition
 
 ### Parameters
 
-*   `compRef` **[Map][272]<[CompType][1], [Array][268]<[Component][3]>>**&#x20;
-*   `def` **[QueryDef][137]\<T, M>**&#x20;
+*   `compRef` **[Map][278]<[CompType][1], [Array][274]<[Component][3]>>**&#x20;
+*   `def` **[QueryDef][143]\<T, M>**&#x20;
 
 ## QueryResults
 
@@ -1025,7 +1051,7 @@ Class which provides functionality for accessing query search results
 ### Parameters
 
 *   `ecs` **[ECS][15]**&#x20;
-*   `handler` **[QueryHandler][139]\<T, M>**&#x20;
+*   `handler` **[QueryHandler][145]\<T, M>**&#x20;
 
 ### size
 
@@ -1039,19 +1065,19 @@ Returns **any** Boolean indicating whether this query has no entities
 
 #### Parameters
 
-*   `cb` **function (v: [ExtractCompList][136]\<T>): R?** Callback function which is applied to each element of the outer array. If omitted then the array will be returned as is
+*   `cb` **function (v: [ExtractCompList][142]\<T>): R?** Callback function which is applied to each element of the outer array. If omitted then the array will be returned as is
 
-Returns **[Array][268]\<R>** Array where each element is a tuple array containing the queried components in their specified order with the optional callback function applied to each tuple of components. If the query contains no entities then an empty array will be return
+Returns **[Array][274]\<R>** Array where each element is a tuple array containing the queried components in their specified order with the optional callback function applied to each tuple of components. If the query contains no entities then an empty array will be return
 
 ### single
 
 Only use if the query is intended to only ever have a single entity.
 
-Returns **([ExtractCompList][136]\<T> | null)** Tuple array containing the queried components of the only entity in the query. If there is more than entity in the query then only the first entity's components will be returned and a warning will be emitted. If the query is empty then the method will return `null`
+Returns **([ExtractCompList][142]\<T> | null)** Tuple array containing the queried components of the only entity in the query. If there is more than entity in the query then only the first entity's components will be returned and a warning will be emitted. If the query is empty then the method will return `null`
 
 ### entities
 
-Returns **[Array][268]<[number][270]>** Array of entity IDs contained in the query. If the query has no entities then an empty array will be returned
+Returns **[Array][274]<[number][276]>** Array of entity IDs contained in the query. If the query has no entities then an empty array will be returned
 
 ### entity
 
@@ -1059,7 +1085,7 @@ Returns **([Entity][52] | null)** `Entity` instance of the only entity in the qu
 
 ## ResType
 
-Type: function (...args: [Array][268]\<any>): T
+Type: function (...args: [Array][274]\<any>): T
 
 ## Resource
 
@@ -1067,11 +1093,11 @@ Class which all ECS resources must inherit from.
 
 ### getName
 
-Returns **[string][269]** The name of this resources's type
+Returns **[string][275]** The name of this resources's type
 
 ### getType
 
-Returns **[ResType][150]\<this>** the resource's type
+Returns **[ResType][156]\<this>** the resource's type
 
 ## System
 
@@ -1079,22 +1105,22 @@ Type: function (ecs: [ECS][15]): void
 
 ## AsyncSystem
 
-Type: function (ecs: [ECS][15]): [Promise][273]\<void>
+Type: function (ecs: [ECS][15]): [Promise][279]\<void>
 
 ## SystemContext
 
-Type: {executor: ([System][154] | [AsyncSystem][155]), async: [boolean][271], name: [string][269], enabled: [boolean][271], resources: [Map][272]<[ResType][150], any>, queries: [Map][272]<[QueryDef][137], [QueryResults][141]>, readers: [Map][272]<[EventType][115], [EventReader][123]\<any>>, writers: [Map][272]<[EventType][115], [EventWriter][119]\<any>>}
+Type: {executor: ([System][160] | [AsyncSystem][161]), async: [boolean][277], name: [string][275], enabled: [boolean][277], resources: [Map][278]<[ResType][156], any>, queries: [Map][278]<[QueryDef][143], [QueryResults][147]>, readers: [Map][278]<[EventType][121], [EventReader][129]\<any>>, writers: [Map][278]<[EventType][121], [EventWriter][125]\<any>>}
 
 ### Properties
 
-*   `executor` **([System][154] | [AsyncSystem][155])**&#x20;
-*   `async` **[boolean][271]**&#x20;
-*   `name` **[string][269]**&#x20;
-*   `enabled` **[boolean][271]**&#x20;
-*   `resources` **[Map][272]<[ResType][150], any>**&#x20;
-*   `queries` **[Map][272]<[QueryDef][137], [QueryResults][141]>**&#x20;
-*   `readers` **[Map][272]<[EventType][115], [EventReader][123]\<any>>**&#x20;
-*   `writers` **[Map][272]<[EventType][115], [EventWriter][119]\<any>>**&#x20;
+*   `executor` **([System][160] | [AsyncSystem][161])**&#x20;
+*   `async` **[boolean][277]**&#x20;
+*   `name` **[string][275]**&#x20;
+*   `enabled` **[boolean][277]**&#x20;
+*   `resources` **[Map][278]<[ResType][156], any>**&#x20;
+*   `queries` **[Map][278]<[QueryDef][143], [QueryResults][147]>**&#x20;
+*   `readers` **[Map][278]<[EventType][121], [EventReader][129]\<any>>**&#x20;
+*   `writers` **[Map][278]<[EventType][121], [EventWriter][125]\<any>>**&#x20;
 
 ## easings
 
@@ -1104,16 +1130,16 @@ Class representing a 2 dimensional vector
 
 ### Parameters
 
-*   `x` **[number][270]**  (optional, default `0`)
-*   `y` **[number][270]**  (optional, default `0`)
+*   `x` **[number][276]**  (optional, default `0`)
+*   `y` **[number][276]**  (optional, default `0`)
 
 ### x
 
-Type: [number][270]
+Type: [number][276]
 
 ### y
 
-Type: [number][270]
+Type: [number][276]
 
 ### add
 
@@ -1121,9 +1147,9 @@ Adds the input vector or scalar to this vector
 
 #### Parameters
 
-*   `v` **([Vec2][159] | [number][270])**&#x20;
+*   `v` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### sub
 
@@ -1131,9 +1157,9 @@ Subtracts the input vector or scalar from this vector
 
 #### Parameters
 
-*   `v` **([Vec2][159] | [number][270])**&#x20;
+*   `v` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### mul
 
@@ -1141,9 +1167,9 @@ multiplies this vector by the input vector or scalar
 
 #### Parameters
 
-*   `v` **([Vec2][159] | [number][270])**&#x20;
+*   `v` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### div
 
@@ -1151,29 +1177,29 @@ Divides this vector by the input vector or scalar
 
 #### Parameters
 
-*   `v` **([Vec2][159] | [number][270])**&#x20;
+*   `v` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### dot
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[number][270]** the dot product of this vector and the input vector
+Returns **[number][276]** the dot product of this vector and the input vector
 
 ### width
 
-Type: [number][270]
+Type: [number][276]
 
-Returns **[number][270]**&#x20;
+Returns **[number][276]**&#x20;
 
 ### height
 
-Type: [number][270]
+Type: [number][276]
 
-Returns **[number][270]**&#x20;
+Returns **[number][276]**&#x20;
 
 ### perpRight
 
@@ -1187,19 +1213,19 @@ Converts this vector to it's left normal
 
 Converts this vector to it's unit vector
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### angle
 
-Returns **[number][270]** The angle of the vector
+Returns **[number][276]** The angle of the vector
 
 ### angleTo
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[number][270]** The angle of the input vector with respect to this vector
+Returns **[number][276]** The angle of the input vector with respect to this vector
 
 ### setAngle
 
@@ -1207,17 +1233,17 @@ Sets the angle of this vector
 
 #### Parameters
 
-*   `angle` **[number][270]**&#x20;
+*   `angle` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### mag
 
-Returns **[number][270]** the magnitude of this vector
+Returns **[number][276]** the magnitude of this vector
 
 ### magSq
 
-Returns **[number][270]** the magnitude of this vector squared
+Returns **[number][276]** the magnitude of this vector squared
 
 ### setMag
 
@@ -1225,9 +1251,9 @@ Sets the magnitude of this vector to the input value
 
 #### Parameters
 
-*   `m` **[number][270]**&#x20;
+*   `m` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### set
 
@@ -1235,10 +1261,10 @@ Sets this vector to the input values
 
 #### Parameters
 
-*   `x` **([number][270] | \[[number][270], [number][270]] | {x: [number][270], y: [number][270]})**&#x20;
-*   `y` **[number][270]?**&#x20;
+*   `x` **([number][276] | \[[number][276], [number][276]] | {x: [number][276], y: [number][276]})**&#x20;
+*   `y` **[number][276]?**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### setFromAngle
 
@@ -1246,9 +1272,9 @@ Sets this vector to be a unit vector based on the input angle
 
 #### Parameters
 
-*   `angle` **[number][270]**&#x20;
+*   `angle` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### setFromPolar
 
@@ -1256,32 +1282,32 @@ Sets this vector from the input polar coordinates
 
 #### Parameters
 
-*   `r` **[number][270]**&#x20;
-*   `angle` **[number][270]**&#x20;
+*   `r` **[number][276]**&#x20;
+*   `angle` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### random
 
 Randomize this vector's components between -1 and 1
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### clone
 
-Returns **[Vec2][159]** A clone of this vector
+Returns **[Vec2][165]** A clone of this vector
 
 ### toArray
 
-Returns **\[[number][270], [number][270]]** This vector's components as an array
+Returns **\[[number][276], [number][276]]** This vector's components as an array
 
 ### toObject
 
-Returns **{x: [number][270], y: [number][270]}** This vector's components in an object
+Returns **{x: [number][276], y: [number][276]}** This vector's components in an object
 
 ### toString
 
-Returns **[string][269]** Serializes this vector as a string
+Returns **[string][275]** Serializes this vector as a string
 
 ### clamp
 
@@ -1289,10 +1315,10 @@ Clamps this vector's components between input minimums and maximimums
 
 #### Parameters
 
-*   `min` **([Vec2][159] | [number][270])**&#x20;
-*   `max` **([Vec2][159] | [number][270])**&#x20;
+*   `min` **([Vec2][165] | [number][276])**&#x20;
+*   `max` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### clampMag
 
@@ -1300,10 +1326,10 @@ Clamps the magnitude of this vector between the input minimum and maximum
 
 #### Parameters
 
-*   `min` **[number][270]**&#x20;
-*   `max` **[number][270]**&#x20;
+*   `min` **[number][276]**&#x20;
+*   `max` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### lerp
 
@@ -1311,79 +1337,79 @@ Linearly interpolates this vector to the input vector by the input amount
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
-*   `t` **[number][270]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
+*   `t` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### equals
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[boolean][271]** Boolean indicating if the input vector is equal to this vector
+Returns **[boolean][277]** Boolean indicating if the input vector is equal to this vector
 
 ### closeTo
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
-*   `margin` **[number][270]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
+*   `margin` **[number][276]**&#x20;
 
-Returns **[boolean][271]** Boolean indicating if the input vector is close to this vector within the input margins
+Returns **[boolean][277]** Boolean indicating if the input vector is close to this vector within the input margins
 
 ### distanceTo
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[number][270]** The distance from this vector to the input vector
+Returns **[number][276]** The distance from this vector to the input vector
 
 ### distanceToSq
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[number][270]** The distance from this vector to the input vector squared
+Returns **[number][276]** The distance from this vector to the input vector squared
 
 ### manhattan
 
-Returns **[number][270]** The manhattan values of this vector
+Returns **[number][276]** The manhattan values of this vector
 
 ### manhattanDistanceTo
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[number][270]** the manhattan distance between this vector and the input vector
+Returns **[number][276]** the manhattan distance between this vector and the input vector
 
 ### round
 
 Rounds this vector to the nearest whole numbers
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### floor
 
 Rounds the values of this vector down
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### ceil
 
 Rounds the values of this vector up
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### roundToZero
 
 Rounds the values towards 0
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### min
 
@@ -1391,9 +1417,9 @@ Sets this vectors values to the smallest values between this vector and the inpu
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### max
 
@@ -1401,9 +1427,9 @@ Sets this vectors values to the largest values between this vector and the input
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### map
 
@@ -1411,9 +1437,9 @@ Applies the input function to both components of this vector
 
 #### Parameters
 
-*   `fn` **function (v: [number][270]): [number][270]**&#x20;
+*   `fn` **function (v: [number][276]): [number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### serialize
 
@@ -1423,7 +1449,7 @@ Returns **any** Serialized string of this vector
 
 Freezes this vector so it's values can no longer be change in any way
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### from
 
@@ -1431,9 +1457,9 @@ Creates a new vector from the given inputs
 
 #### Parameters
 
-*   `v` **([Vec2][159] | [Array][268]<[number][270]> | {x: [number][270], y: [number][270]})**&#x20;
+*   `v` **([Vec2][165] | [Array][274]<[number][276]> | {x: [number][276], y: [number][276]})**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### fromAngle
 
@@ -1441,9 +1467,9 @@ Creates a unit vector from a given angle
 
 #### Parameters
 
-*   `angle` **[number][270]**&#x20;
+*   `angle` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### fromPolar
 
@@ -1451,16 +1477,16 @@ Creates a vector from polar coordinates
 
 #### Parameters
 
-*   `r` **[number][270]**&#x20;
-*   `angle` **[number][270]**&#x20;
+*   `r` **[number][276]**&#x20;
+*   `angle` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### random
 
 Creates a vector with each component randomized between -1 and 1
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### add
 
@@ -1468,10 +1494,10 @@ Creates a vector from two input vectors added together or an input vector with a
 
 #### Parameters
 
-*   `a` **[Vec2][159]**&#x20;
-*   `b` **([Vec2][159] | [number][270])**&#x20;
+*   `a` **[Vec2][165]**&#x20;
+*   `b` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### sub
 
@@ -1479,10 +1505,10 @@ Creates a vector from the first vector minus the second vector or the scalar
 
 #### Parameters
 
-*   `a` **[Vec2][159]**&#x20;
-*   `b` **([Vec2][159] | [number][270])**&#x20;
+*   `a` **[Vec2][165]**&#x20;
+*   `b` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### mul
 
@@ -1490,10 +1516,10 @@ Creates a vector from the first vector times the second vector or scalar
 
 #### Parameters
 
-*   `a` **[Vec2][159]**&#x20;
-*   `b` **([Vec2][159] | [number][270])**&#x20;
+*   `a` **[Vec2][165]**&#x20;
+*   `b` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### div
 
@@ -1501,10 +1527,10 @@ Creates a vector from the first vector divided by the second vector or scalar
 
 #### Parameters
 
-*   `a` **[Vec2][159]**&#x20;
-*   `b` **([Vec2][159] | [number][270])**&#x20;
+*   `a` **[Vec2][165]**&#x20;
+*   `b` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### unit
 
@@ -1512,9 +1538,9 @@ Creates a unit vector from the input vector
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### fromString
 
@@ -1522,9 +1548,9 @@ Creates a new vector from a serialized string
 
 #### Parameters
 
-*   `s` **[string][269]**&#x20;
+*   `s` **[string][275]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### clamp
 
@@ -1532,11 +1558,11 @@ Creates a new vector from the input vector that is clamped between the input min
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
-*   `min` **([Vec2][159] | [number][270])**&#x20;
-*   `max` **([Vec2][159] | [number][270])**&#x20;
+*   `v` **[Vec2][165]**&#x20;
+*   `min` **([Vec2][165] | [number][276])**&#x20;
+*   `max` **([Vec2][165] | [number][276])**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### clampMag
 
@@ -1544,11 +1570,11 @@ Creates a new vector from the input vector with a magnitude clamped between the 
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
-*   `min` **[number][270]**&#x20;
-*   `max` **[number][270]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
+*   `min` **[number][276]**&#x20;
+*   `max` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### lerp
 
@@ -1556,11 +1582,11 @@ Creates a new vector from the first input vector that is linearly interpolated t
 
 #### Parameters
 
-*   `a` **[Vec2][159]**&#x20;
-*   `b` **[Vec2][159]**&#x20;
-*   `t` **[number][270]**&#x20;
+*   `a` **[Vec2][165]**&#x20;
+*   `b` **[Vec2][165]**&#x20;
+*   `t` **[number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### round
 
@@ -1568,9 +1594,9 @@ Creates a vector from the input vector rounded to the nearest whole numbers
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### floor
 
@@ -1578,9 +1604,9 @@ Creates a new vector from the input vector with the values rounded down
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### ceil
 
@@ -1588,9 +1614,9 @@ Creates a new vector from the input vector with the values rounded up
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### roundToZero
 
@@ -1598,9 +1624,9 @@ Creates a new Vector from the input vector with it's values rounded towards 0
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### min
 
@@ -1608,10 +1634,10 @@ Creates a new vector with the smallest values from both input vectors
 
 #### Parameters
 
-*   `a` **[Vec2][159]**&#x20;
-*   `b` **[Vec2][159]**&#x20;
+*   `a` **[Vec2][165]**&#x20;
+*   `b` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### max
 
@@ -1619,10 +1645,10 @@ Creates a new vector with the largest values from both input vectors
 
 #### Parameters
 
-*   `a` **[Vec2][159]**&#x20;
-*   `b` **[Vec2][159]**&#x20;
+*   `a` **[Vec2][165]**&#x20;
+*   `b` **[Vec2][165]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### map
 
@@ -1630,10 +1656,10 @@ Creates a vector from the input vector with the input function applied to each c
 
 #### Parameters
 
-*   `v` **[Vec2][159]**&#x20;
-*   `fn` **function (v: [number][270]): [number][270]**&#x20;
+*   `v` **[Vec2][165]**&#x20;
+*   `fn` **function (v: [number][276]): [number][276]**&#x20;
 
-Returns **[Vec2][159]**&#x20;
+Returns **[Vec2][165]**&#x20;
 
 ### deserialize
 
@@ -1641,7 +1667,7 @@ Creates a vector from the input serialized string
 
 #### Parameters
 
-*   `str` **[string][269]**&#x20;
+*   `str` **[string][275]**&#x20;
 
 [1]: #comptype
 
@@ -1753,438 +1779,450 @@ Creates a vector from the input serialized string
 
 [55]: #parameters-20
 
-[56]: #hasresource
+[56]: #roots
 
 [57]: #parameters-21
 
-[58]: #insertresource
+[58]: #addroot
 
 [59]: #parameters-22
 
-[60]: #haslocalresource
+[60]: #removeroot
 
 [61]: #parameters-23
 
-[62]: #insertlocalresource
+[62]: #hasresource
 
 [63]: #parameters-24
 
-[64]: #getresource
+[64]: #insertresource
 
 [65]: #parameters-25
 
-[66]: #getlocalresource
+[66]: #haslocalresource
 
 [67]: #parameters-26
 
-[68]: #removeresource
+[68]: #insertlocalresource
 
 [69]: #parameters-27
 
-[70]: #removelocalresource
+[70]: #getresource
 
 [71]: #parameters-28
 
-[72]: #geteventwriter
+[72]: #getlocalresource
 
 [73]: #parameters-29
 
-[74]: #geteventreader
+[74]: #removeresource
 
 [75]: #parameters-30
 
-[76]: #query
+[76]: #removelocalresource
 
 [77]: #parameters-31
 
-[78]: #run
+[78]: #geteventwriter
 
 [79]: #parameters-32
 
-[80]: #startup
+[80]: #geteventreader
 
-[81]: #entitycount
+[81]: #parameters-33
 
-[82]: #update
+[82]: #query
 
-[83]: #shutdown
+[83]: #parameters-34
 
-[84]: #stop
+[84]: #run
 
-[85]: #wipe
+[85]: #parameters-35
 
-[86]: #entity-1
+[86]: #startup
 
-[87]: #parameters-33
+[87]: #entitycount
 
-[88]: #has
+[88]: #update
 
-[89]: #parameters-34
+[89]: #shutdown
 
-[90]: #insert
+[90]: #stop
 
-[91]: #parameters-35
+[91]: #wipe
 
-[92]: #examples-5
+[92]: #entity-1
 
-[93]: #get
+[93]: #parameters-36
 
-[94]: #parameters-36
+[94]: #has
 
-[95]: #examples-6
+[95]: #parameters-37
 
-[96]: #ecs-1
+[96]: #insert
 
-[97]: #delete
+[97]: #parameters-38
 
-[98]: #parameters-37
+[98]: #examples-5
 
-[99]: #examples-7
+[99]: #get
 
-[100]: #destroy-1
+[100]: #parameters-39
 
-[101]: #id
+[101]: #examples-6
 
-[102]: #parent
+[102]: #ecs-1
 
-[103]: #parameters-38
+[103]: #delete
 
-[104]: #children
+[104]: #parameters-40
 
-[105]: #parameters-39
+[105]: #examples-7
 
-[106]: #addchild
+[106]: #destroy-1
 
-[107]: #parameters-40
+[107]: #id
 
-[108]: #addchildren
+[108]: #parent
 
 [109]: #parameters-41
 
-[110]: #removechild
+[110]: #children
 
 [111]: #parameters-42
 
-[112]: #ecsevent
+[112]: #addchild
 
-[113]: #getname-1
+[113]: #parameters-43
 
-[114]: #gettype-1
+[114]: #addchildren
 
-[115]: #eventtype
+[115]: #parameters-44
 
-[116]: #examples-8
+[116]: #removechild
 
-[117]: #eventhandler
+[117]: #parameters-45
 
-[118]: #parameters-43
+[118]: #ecsevent
 
-[119]: #eventwriter
+[119]: #getname-1
 
-[120]: #parameters-44
+[120]: #gettype-1
 
-[121]: #send
+[121]: #eventtype
 
-[122]: #parameters-45
+[122]: #examples-8
 
-[123]: #eventreader
+[123]: #eventhandler
 
 [124]: #parameters-46
 
-[125]: #available
+[125]: #eventwriter
 
-[126]: #empty
+[126]: #parameters-47
 
-[127]: #get-1
+[127]: #send
 
-[128]: #clear
+[128]: #parameters-48
 
-[129]: #ecsplugin
+[129]: #eventreader
 
-[130]: #comptypemod
+[130]: #parameters-49
 
-[131]: #modtype
+[131]: #available
 
-[132]: #with
+[132]: #empty
 
-[133]: #parameters-47
+[133]: #get-1
 
-[134]: #without
+[134]: #clear
 
-[135]: #parameters-48
+[135]: #ecsplugin
 
-[136]: #extractcomplist
+[136]: #comptypemod
 
-[137]: #querydef
+[137]: #modtype
 
-[138]: #properties
+[138]: #with
 
-[139]: #queryhandler
+[139]: #parameters-50
 
-[140]: #parameters-49
+[140]: #without
 
-[141]: #queryresults
+[141]: #parameters-51
 
-[142]: #parameters-50
+[142]: #extractcomplist
 
-[143]: #size
+[143]: #querydef
 
-[144]: #empty-1
+[144]: #properties
 
-[145]: #results
+[145]: #queryhandler
 
-[146]: #parameters-51
+[146]: #parameters-52
 
-[147]: #single
+[147]: #queryresults
 
-[148]: #entities
+[148]: #parameters-53
 
-[149]: #entity-2
+[149]: #size
 
-[150]: #restype
+[150]: #empty-1
 
-[151]: #resource
+[151]: #results
 
-[152]: #getname-2
+[152]: #parameters-54
 
-[153]: #gettype-2
+[153]: #single
 
-[154]: #system
+[154]: #entities
 
-[155]: #asyncsystem
+[155]: #entity-2
 
-[156]: #systemcontext
+[156]: #restype
 
-[157]: #properties-1
+[157]: #resource
 
-[158]: #easings
+[158]: #getname-2
 
-[159]: #vec2
+[159]: #gettype-2
 
-[160]: #parameters-52
+[160]: #system
 
-[161]: #x
+[161]: #asyncsystem
 
-[162]: #y
+[162]: #systemcontext
 
-[163]: #add
+[163]: #properties-1
 
-[164]: #parameters-53
+[164]: #easings
 
-[165]: #sub
+[165]: #vec2
 
-[166]: #parameters-54
+[166]: #parameters-55
 
-[167]: #mul
+[167]: #x
 
-[168]: #parameters-55
+[168]: #y
 
-[169]: #div
+[169]: #add
 
 [170]: #parameters-56
 
-[171]: #dot
+[171]: #sub
 
 [172]: #parameters-57
 
-[173]: #width
+[173]: #mul
 
-[174]: #height
+[174]: #parameters-58
 
-[175]: #perpright
+[175]: #div
 
-[176]: #perpleft
+[176]: #parameters-59
 
-[177]: #unit
+[177]: #dot
 
-[178]: #angle
+[178]: #parameters-60
 
-[179]: #angleto
+[179]: #width
 
-[180]: #parameters-58
+[180]: #height
 
-[181]: #setangle
+[181]: #perpright
 
-[182]: #parameters-59
+[182]: #perpleft
 
-[183]: #mag
+[183]: #unit
 
-[184]: #magsq
+[184]: #angle
 
-[185]: #setmag
+[185]: #angleto
 
-[186]: #parameters-60
+[186]: #parameters-61
 
-[187]: #set
+[187]: #setangle
 
-[188]: #parameters-61
+[188]: #parameters-62
 
-[189]: #setfromangle
+[189]: #mag
 
-[190]: #parameters-62
+[190]: #magsq
 
-[191]: #setfrompolar
+[191]: #setmag
 
 [192]: #parameters-63
 
-[193]: #random
+[193]: #set
 
-[194]: #clone-1
+[194]: #parameters-64
 
-[195]: #toarray
+[195]: #setfromangle
 
-[196]: #toobject
+[196]: #parameters-65
 
-[197]: #tostring
+[197]: #setfrompolar
 
-[198]: #clamp
+[198]: #parameters-66
 
-[199]: #parameters-64
+[199]: #random
 
-[200]: #clampmag
+[200]: #clone-1
 
-[201]: #parameters-65
+[201]: #toarray
 
-[202]: #lerp
+[202]: #toobject
 
-[203]: #parameters-66
+[203]: #tostring
 
-[204]: #equals
+[204]: #clamp
 
 [205]: #parameters-67
 
-[206]: #closeto
+[206]: #clampmag
 
 [207]: #parameters-68
 
-[208]: #distanceto
+[208]: #lerp
 
 [209]: #parameters-69
 
-[210]: #distancetosq
+[210]: #equals
 
 [211]: #parameters-70
 
-[212]: #manhattan
+[212]: #closeto
 
-[213]: #manhattandistanceto
+[213]: #parameters-71
 
-[214]: #parameters-71
+[214]: #distanceto
 
-[215]: #round
+[215]: #parameters-72
 
-[216]: #floor
+[216]: #distancetosq
 
-[217]: #ceil
+[217]: #parameters-73
 
-[218]: #roundtozero
+[218]: #manhattan
 
-[219]: #min
+[219]: #manhattandistanceto
 
-[220]: #parameters-72
+[220]: #parameters-74
 
-[221]: #max
+[221]: #round
 
-[222]: #parameters-73
+[222]: #floor
 
-[223]: #map
+[223]: #ceil
 
-[224]: #parameters-74
+[224]: #roundtozero
 
-[225]: #serialize-1
+[225]: #min
 
-[226]: #freeze
+[226]: #parameters-75
 
-[227]: #from
+[227]: #max
 
-[228]: #parameters-75
+[228]: #parameters-76
 
-[229]: #fromangle
+[229]: #map
 
-[230]: #parameters-76
+[230]: #parameters-77
 
-[231]: #frompolar
+[231]: #serialize-1
 
-[232]: #parameters-77
+[232]: #freeze
 
-[233]: #random-1
+[233]: #from
 
-[234]: #add-1
+[234]: #parameters-78
 
-[235]: #parameters-78
+[235]: #fromangle
 
-[236]: #sub-1
+[236]: #parameters-79
 
-[237]: #parameters-79
+[237]: #frompolar
 
-[238]: #mul-1
+[238]: #parameters-80
 
-[239]: #parameters-80
+[239]: #random-1
 
-[240]: #div-1
+[240]: #add-1
 
 [241]: #parameters-81
 
-[242]: #unit-1
+[242]: #sub-1
 
 [243]: #parameters-82
 
-[244]: #fromstring
+[244]: #mul-1
 
 [245]: #parameters-83
 
-[246]: #clamp-1
+[246]: #div-1
 
 [247]: #parameters-84
 
-[248]: #clampmag-1
+[248]: #unit-1
 
 [249]: #parameters-85
 
-[250]: #lerp-1
+[250]: #fromstring
 
 [251]: #parameters-86
 
-[252]: #round-1
+[252]: #clamp-1
 
 [253]: #parameters-87
 
-[254]: #floor-1
+[254]: #clampmag-1
 
 [255]: #parameters-88
 
-[256]: #ceil-1
+[256]: #lerp-1
 
 [257]: #parameters-89
 
-[258]: #roundtozero-1
+[258]: #round-1
 
 [259]: #parameters-90
 
-[260]: #min-1
+[260]: #floor-1
 
 [261]: #parameters-91
 
-[262]: #max-1
+[262]: #ceil-1
 
 [263]: #parameters-92
 
-[264]: #map-1
+[264]: #roundtozero-1
 
 [265]: #parameters-93
 
-[266]: #deserialize-1
+[266]: #min-1
 
 [267]: #parameters-94
 
-[268]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[268]: #max-1
 
-[269]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[269]: #parameters-95
 
-[270]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[270]: #map-1
 
-[271]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[271]: #parameters-96
 
-[272]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map
+[272]: #deserialize-1
 
-[273]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[273]: #parameters-97
+
+[274]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[275]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[276]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[277]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[278]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+[279]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise

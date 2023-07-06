@@ -15,6 +15,7 @@ export class ECS {
 	private nodes: Map<number, TreeNode>;
 	private allocator: NumberAllocator;
 	private entities: Set<number>;
+	private rootEntities: number[];
 
 	private startupSystems: SystemContext[];
 	private mainSystems: SystemContext[];
@@ -39,6 +40,7 @@ export class ECS {
 		this.allocator = new NumberAllocator(0, 4294967294);
 		this.entities = new Set();
 		this.nodes = new Map();
+		this.rootEntities = [];
 
 		this.startupSystems = [];
 		this.mainSystems = [];
@@ -363,6 +365,7 @@ export class ECS {
 		const entity = new Entity(this, this.components, this.queries, this.nodes, eid);
 
 		entity.insert(...comps);
+		this.rootEntities.push(eid);
 
 		return entity;
 	}
@@ -410,6 +413,55 @@ export class ECS {
 		for (let handler of this.queries.values()) {
 			if (handler.affectedBy(eid)) handler.removeEntity(eid);
 		}
+
+		return this;
+	}
+
+	/**
+	 * @returns An array containing the entity IDs of all root entities that meet the component type modifiers specified. If no modifiers are specified then it will return all root entity eids.
+	 */
+	roots(...mods: CompTypeMod[]): number[] {
+		if (mods.length < 1) return [...this.rootEntities];
+
+		let eids = [...this.rootEntities];
+
+		mods.forEach((m) => {
+			const [mod, type] = m();
+
+			if (!this.components.has(type)) {
+				throw new Error(`Component Type [${type.name}] is not registered`);
+			}
+
+			if (mod === 'With') {
+				eids = eids.filter((eid) => this.components.get(type)![eid] !== undefined);
+			} else {
+				eids = eids.filter((eid) => this.components.get(type)![eid] === undefined);
+			}
+		});
+
+		return eids;
+	}
+
+	/**
+	 * @internal
+	 */
+	addRoot(eid: number) {
+		if (this.rootEntities.includes(eid)) return this;
+		if (!this.entities.has(eid)) return this;
+
+		this.rootEntities.push(eid);
+
+		return this;
+	}
+
+	/**
+	 * @internal
+	 */
+	removeRoot(eid: number) {
+		if (!this.rootEntities.includes(eid)) return this;
+		if (!this.entities.has(eid)) return this;
+
+		this.rootEntities.splice(this.rootEntities.indexOf(eid), 1);
 
 		return this;
 	}

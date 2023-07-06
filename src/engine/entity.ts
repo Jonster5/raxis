@@ -183,11 +183,22 @@ export class Entity {
 	 * @param newParant If specified, then this entity's parent will be changed to the new ID or removed if `null`
 	 */
 	parent(newParent?: number | null): number | null {
-		if (newParent !== undefined) {
-			if (typeof this.node.parent === 'number') this.ecs.entity(this.node.parent).removeChild(this.eid);
+		if (newParent === undefined) return this.node.parent;
+		if (newParent === this.node.parent) return this.node.parent;
 
-			this.node.parent = newParent;
+		if (typeof this.node.parent === 'number') {
+			this.ecs.entity(this.node.parent).removeChild(this.eid);
+		} else {
+			this.ecs.removeRoot(this.eid);
 		}
+
+		if (typeof newParent === 'number') {
+			this.ecs.entity(newParent).addChild(this);
+		} else {
+			this.ecs.addRoot(this.eid);
+		}
+
+		this.node.parent = newParent;
 
 		return this.node.parent;
 	}
@@ -196,7 +207,7 @@ export class Entity {
 	 * @returns An array containing the entity IDs of all of this entity's children that meet the component type modifiers specified. If no modifiers are specified then it will return all of this entity's children.
 	 */
 	children(...mods: CompTypeMod[]): number[] {
-		if (mods.length < 1) return this.node.children;
+		if (mods.length < 1) return [...this.node.children];
 
 		let eids = [...this.node.children];
 

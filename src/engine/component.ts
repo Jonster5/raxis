@@ -95,7 +95,7 @@ export class TreeNode {
 	children: number[] = [];
 
 	onDestroy(ecs: ECS, eid: number) {
-		this.children.forEach((child) => ecs.destroy(child));
+		if (this.children.length > 0) this.children.forEach((child) => ecs.destroy(child));
 		if (this.parent === null) return;
 
 		ecs.entity(this.parent).removeChild(eid);
