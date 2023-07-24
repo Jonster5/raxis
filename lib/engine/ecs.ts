@@ -153,11 +153,6 @@ export class ECS {
 	}
 
 	/**
-	 *
-	 */
-	addSystemToEvent(event: EventType, system: System | AsyncSystem) {}
-
-	/**
 	 * Adds specified system to ECS as a `startup` system
 	 * All `startup` systems run once when the ECS first starts up
 	 * @param system A synchronous or asynchronous ECS system

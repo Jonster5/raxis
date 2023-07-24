@@ -11,4 +11,14 @@ export default defineConfig({
 			formats: ['es', 'cjs'],
 		},
 	},
+	server: {
+		port: 7700,
+		host: true,
+	},
+	resolve: {
+		alias: {
+			raxis: './lib/main',
+			'raxis/math': './lib/math',
+		},
+	},
 });

@@ -143,10 +143,10 @@ export class EventReader<T extends ECSEvent> {
 
 	/**
 	 * When called this method will mark all events as read making any unhandled events will be innaccessable.
-	 * @returns An array containing all unread events or null if there are none available.
+	 * @returns An array containing all unread events or an empty array if there are none.
 	 */
-	get(): (T | null)[] | null {
-		if (this.empty()) return null;
+	get(): (T | null)[] {
+		if (this.empty()) return [];
 
 		const data = this.handler.data.filter(({ gen }) => gen > this.gen).map(({ body }) => body?.clone()) as T[];
 
