@@ -1,6 +1,6 @@
 {
 	"name": "raxis",
-	"version": "1.3.3",
+	"version": "1.3.4",
 	"description": "Raxis Game Engine",
 	"type": "module",
 	"files": [

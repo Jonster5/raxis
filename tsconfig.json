@@ -25,5 +25,5 @@
       "raxis/math": ["lib/math"]
     }
   },
-  "include": ["src"]
+  "include": ["lib"]
 }
