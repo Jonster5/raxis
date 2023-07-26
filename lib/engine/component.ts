@@ -81,14 +81,14 @@ export abstract class Component {
 	 * @optional
 	 * @abstract Optional method that can be used to serialize a component's state into an ArrayBuffer.
 	 */
-	serialize?(): ArrayBuffer;
+	serialize?(): ArrayBufferLike;
 
 	/**
 	 * @optional
 	 * @param buffer An ArrayBuffer created from this object's `serialize` method
 	 * @returns A new instance of `this` created from the serialized input buffer
 	 */
-	static deserialize?(buffer: ArrayBuffer): Component;
+	static deserialize?(buffer: ArrayBufferLike): Component;
 }
 
 export class TreeNode {

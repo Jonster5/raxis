@@ -631,23 +631,18 @@ export class Vec2 {
 	/**
 	 * @returns Object serialized into an ArrayBuffer
 	 */
-	serialize(): ArrayBuffer {
-		const view = new DataView(new ArrayBuffer(16));
-
-		view.setFloat64(1, this.x);
-		view.setFloat64(8, this.y);
-
-		return view.buffer;
+	serialize(): ArrayBufferLike {
+		return new Float64Array(this).buffer;
 	}
 
 	/**
 	 * @param buffer An ArrayBuffer created from this object's `serialize` method
 	 * @returns A new instance of `this` created from the serialized input buffer
 	 */
-	static deserialize(buffer: ArrayBuffer): Vec2 {
-		const view = new DataView(buffer);
+	static deserialize(buffer: ArrayBufferLike): Vec2 {
+		const view = new Float64Array(buffer);
 
-		return new Vec2(view.getFloat64(1), view.getFloat64(8));
+		return new Vec2(view[0], view[1]);
 	}
 
 	/**
