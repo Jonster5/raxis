@@ -78,14 +78,15 @@ export abstract class Component {
 	}
 
 	/**
-	 * @abstract Optional method that can be used to serialize a component's state in a predictable way.
+	 * @optional
+	 * @abstract Optional method that can be used to serialize a component's state into an ArrayBuffer.
 	 */
 	serialize?(): string;
 
 	/**
-	 * @abstract Optional method that will produce a new component based on an input string.
-	 *
-	 * @param str A serialized component, usually created by a component's `serialize` method.
+	 * @optional
+	 * @param buffer An ArrayBuffer created from this object's `serialize` method
+	 * @returns A new instance of `this` created from the serialized input buffer
 	 */
 	static deserialize?(str: string): Component;
 }
