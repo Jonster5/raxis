@@ -1,24 +1,19 @@
 {
 	"name": "raxis",
-	"version": "1.3.11",
+	"version": "1.3.13",
 	"description": "Raxis Game Engine",
 	"type": "module",
 	"files": [
 		"dist"
 	],
-	"main": "./dist/raxis-main.cjs",
-	"module": "./dist/raxis-main.js",
+	"main": "./dist/raxis.cjs",
+	"module": "./dist/raxis.js",
 	"types": "./dist/main.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/raxis-main.js",
-			"require": "./dist/raxis-main.cjs",
+			"import": "./dist/raxis.js",
+			"require": "./dist/raxis.cjs",
 			"types": "./dist/main.d.ts"
-		},
-		"./math": {
-			"import": "./dist/raxis-math.js",
-			"require": "./dist/raxis-math.cjs",
-			"types": "./dist/math.d.ts"
 		}
 	},
 	"scripts": {

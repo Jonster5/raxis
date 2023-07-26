@@ -6,9 +6,9 @@ export default defineConfig({
 	plugins: [dts({ insertTypesEntry: true })],
 	build: {
 		lib: {
-			entry: ['./lib/main.ts', './lib/math.ts'],
+			entry: './lib/main.ts',
 			name: 'raxis',
-			fileName: (f, n) => `raxis-${n}.${f === 'cjs' ? f : 'js'}`,
+			fileName: (f) => `raxis.${f === 'cjs' ? 'cjs' : 'js'}`,
 			formats: ['es', 'cjs'],
 		},
 	},
@@ -18,7 +18,6 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			'raxis/math': path.resolve(__dirname, './lib/math'),
 			raxis: path.resolve(__dirname, './lib/main'),
 		},
 	},
