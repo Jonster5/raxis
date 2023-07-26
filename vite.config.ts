@@ -1,3 +1,4 @@
+import path from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
@@ -17,8 +18,8 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			raxis: './lib/main',
-			'raxis/math': './lib/math',
+			'raxis/math': path.resolve(__dirname, './lib/math'),
+			raxis: path.resolve(__dirname, './lib/main'),
 		},
 	},
 });
