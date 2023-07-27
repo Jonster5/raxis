@@ -90,6 +90,23 @@ export class Entity {
 	}
 
 	/**
+	 * Replaces the existing component of the type inputted with the input component
+	 *
+	 * @param comp The component you which to replace with
+	 */
+	replace(comp: Component) {
+		if (!this.isValid) {
+			throw new Error(`Entities cannot be modified after being destroyed`);
+		}
+
+		if (!this.compRef.has(comp.getType())) {
+			throw new Error(`The component type [${comp.getName()}] is not registered`);
+		}
+
+		this.compRef.get(comp.getType())![this.eid] = comp;
+	}
+
+	/**
 	 * @returns The component of the specified type on this entity or null if it doesn't exist
 	 *
 	 * @example
@@ -101,7 +118,7 @@ export class Entity {
 			throw new Error(`Entities cannot be modified after being destroyed`);
 		}
 
-		if (!this.compRef.get(type)) {
+		if (!this.compRef.has(type)) {
 			throw new Error(`The component type [${type.name}] is not registered`);
 		}
 
