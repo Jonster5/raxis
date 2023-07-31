@@ -104,6 +104,12 @@ export class Entity {
 		}
 
 		this.compRef.get(comp.getType())![this.eid] = comp;
+
+		for (let handler of this.queries.values()) {
+			if (!handler.affectedBy(comp.getType())) continue;
+
+			handler.replace(this.eid, comp);
+		}
 	}
 
 	/**

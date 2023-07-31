@@ -1,12 +1,27 @@
-import { ECS, Vec2 } from 'raxis';
+import { Component, ECS } from 'raxis';
 
-const ecs = new ECS().addStartupSystem(() => {
-	const a = new Vec2(69, 420);
-	console.log(a);
-	const a1 = a.serialize();
-	console.log(a1);
-	const b = Vec2.deserialize(a1);
-	console.log(b);
-});
+export class MyComp extends Component {
+	constructor(public foo: string) {
+		super();
+	}
+}
+
+const ecs = new ECS()
+	.addComponentType(MyComp)
+	.addStartupSystem((ecs: ECS) => {
+		ecs.spawn(new MyComp('original'));
+	})
+	.addStartupSystem((ecs: ECS) => {
+		window.addEventListener('keydown', (e) => {
+			if (e.code !== 'Space') return;
+
+			ecs.query([MyComp]).entity()!.replace(new MyComp('yup'));
+		});
+	})
+	.addMainSystem((ecs: ECS) => {
+		const [m] = ecs.query([MyComp]).single()!;
+
+		console.log(m);
+	});
 
 ecs.run();

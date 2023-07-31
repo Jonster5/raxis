@@ -111,6 +111,10 @@ export class QueryHandler<
 		return true;
 	}
 
+	replace(eid: number, comp: Component) {
+		this.components.get(comp.getType())![eid] = comp;
+	}
+
 	addEntity(eid: number) {
 		this.entities.add(eid);
 
