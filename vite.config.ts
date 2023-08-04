@@ -21,4 +21,7 @@ export default defineConfig({
 			raxis: path.resolve(__dirname, './lib/main'),
 		},
 	},
+	esbuild: {
+		keepNames: true,
+	},
 });
