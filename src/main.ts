@@ -1,27 +1,12 @@
-import { Component, ECS } from 'raxis';
+import { MemPool, Vec2 } from 'raxis';
 
-export class MyComp extends Component {
-	constructor(public foo: string) {
-		super();
-	}
-}
+const vecPool = new MemPool(() => new Vec2(), {
+	size: 5,
+	growBy: 10,
+});
 
-const ecs = new ECS()
-	.addComponentType(MyComp)
-	.addStartupSystem((ecs: ECS) => {
-		ecs.spawn(new MyComp('original'));
-	})
-	.addStartupSystem((ecs: ECS) => {
-		window.addEventListener('keydown', (e) => {
-			if (e.code !== 'Space') return;
+console.log(vecPool.available);
 
-			ecs.query([MyComp]).entity()!.replace(new MyComp('yup'));
-		});
-	})
-	.addMainSystem((ecs: ECS) => {
-		const [m] = ecs.query([MyComp]).single()!;
+vecPool.reclaim();
 
-		console.log(m);
-	});
-
-ecs.run();
+console.log(vecPool.available);
