@@ -7,6 +7,9 @@ export * from './engine/resource';
 export * from './engine/system';
 export * from './engine/plugin';
 
-// math
+// utils
 export * from './math/vec2';
 export * from './math/easings';
+
+// structures
+export * from './structures/mempool';
