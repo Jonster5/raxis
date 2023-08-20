@@ -11,6 +11,7 @@ export default defineConfig({
 			fileName: (f) => `raxis.${f === 'cjs' ? 'cjs' : 'js'}`,
 			formats: ['es', 'cjs'],
 		},
+		sourcemap: true,
 	},
 	server: {
 		port: 7700,
@@ -23,5 +24,6 @@ export default defineConfig({
 	},
 	esbuild: {
 		keepNames: true,
+		platform: 'neutral',
 	},
 });
