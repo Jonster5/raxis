@@ -22,7 +22,7 @@
 		"baseUrl": "./",
 		"paths": {
 			"raxis": ["lib/main"],
-			"raxis/math": ["lib/math"]
+			"raxis/math": ["lib/utils"]
 		}
 	},
 	"include": ["src", "lib"],

@@ -8,8 +8,6 @@ export * from './engine/system';
 export * from './engine/plugin';
 
 // utils
-export * from './math/vec2';
-export * from './math/easings';
-
-// structures
-export * from './structures/mempool';
+export * from './utils/vec2';
+export * from './utils/easings';
+export * from './utils/mempool';
