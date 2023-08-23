@@ -614,9 +614,10 @@ export class Vec2 {
 	/**
 	 * Applies the input function to both components of this vector
 	 */
-	map(fn: (v: number) => number): Vec2 {
-		this.x = fn(this.x);
-		this.y = fn(this.y);
+	map(fn: (v: number) => number): Vec2;
+	map(xfn: (x: number) => number, yfn?: (y: number) => number): Vec2 {
+		this.x = xfn(this.x);
+		this.y = yfn ? yfn(this.y) : xfn(this.y);
 
 		return this;
 	}
@@ -632,7 +633,7 @@ export class Vec2 {
 	 * @returns Object serialized into an ArrayBuffer
 	 */
 	serialize(): ArrayBufferLike {
-		return new Float64Array(this).buffer;
+		return new Float64Array([this.x, this.y]).buffer;
 	}
 
 	/**

@@ -2,16 +2,33 @@ import { NumberAllocator } from 'number-allocator';
 import { Entity } from './entity';
 import { type QueryDef, type CompTypeMod, QueryHandler, QueryResults } from './query';
 import { EventHandler, type ECSEvent, EventReader, type EventType, EventWriter } from './event';
-import { TreeNode, type CompType, type Component } from './component';
+import { TreeNode, type CompType, Component } from './component';
 import type { ResType, Resource } from './resource';
 import type { AsyncSystem, System, SystemContext } from './system';
 import type { ECSPlugin } from './plugin';
+
+interface ComponentRegistry extends Map<CompType, Component[]> {
+	delete(key: CompType): boolean;
+
+	forEach(
+		callbackfn: <T extends Component>(value: T[], key: CompType<T>, map: Map<CompType, Component[]>) => void,
+		thisArg?: any
+	): void;
+
+	get<T extends Component>(key: CompType<T>): T[] | undefined;
+
+	has(key: CompType): boolean;
+
+	set<T extends Component>(key: CompType<T>, value: T[]): this;
+
+	readonly size: number;
+}
 
 /**
  * Creates ECS instance
  */
 export class ECS {
-	private components: Map<CompType, Component[]>;
+	private components: ComponentRegistry;
 	private nodes: Map<number, TreeNode>;
 	private allocator: NumberAllocator;
 	private entities: Set<number>;

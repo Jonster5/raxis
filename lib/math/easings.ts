@@ -1,5 +1,3 @@
-/** @module easings */
-
 export function linear(x: number): number {
 	return x;
 }

@@ -6,7 +6,7 @@ export default defineConfig({
 	plugins: [dts({ insertTypesEntry: true, exclude: 'src' })],
 	build: {
 		lib: {
-			entry: './lib/main.ts',
+			entry: './lib/index.ts',
 			name: 'raxis',
 			fileName: (f) => `raxis.${f === 'cjs' ? 'cjs' : 'js'}`,
 			formats: ['es', 'cjs'],
