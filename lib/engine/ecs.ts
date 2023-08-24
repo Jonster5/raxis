@@ -535,7 +535,7 @@ export class ECS {
 	 * @param type Resource type
 	 * @returns The resource instance or null if the resource doesn't exist
 	 */
-	getResource<T extends Resource>(type: ResType<T>): T | null {
+	getResource<T extends Resource>(type: typeof Resource): T | null {
 		if (!this.resources.has(type)) {
 			console.warn(`Resource of type [${type.name}] does not exist`);
 			return null;
@@ -654,11 +654,10 @@ export class ECS {
 	 * @param mods Array of component type modifiers to filter the results
 	 * @returns Locally scoped `QueryResults` instance associated with the specified component types and component type mods
 	 */
-	query<
-		T extends [...CompType[]] = CompType[],
-		M extends [...CompTypeMod[]] = CompTypeMod[],
-		Q extends QueryDef<T, M> = QueryDef<T, M>
-	>(types: [...T], ...mods: [...M]): QueryResults<T, M> {
+	query<T extends [...CompType[]], M extends [...CompTypeMod[]], Q extends QueryDef<T, M>>(
+		types: [...T],
+		...mods: [...M]
+	): QueryResults<T, M> {
 		const input: Q = { types, mods: mods ?? new Array<CompTypeMod>() } as unknown as Q;
 
 		let query: Q | undefined = undefined;
